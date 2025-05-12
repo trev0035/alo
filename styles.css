@@ -101,7 +101,7 @@ nav a:hover::after, nav a.active::after {
 }
 
 .credit-item {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 0.9rem;
 }
@@ -166,11 +166,13 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease-out, filter 0.4s ease-out;
+    filter: grayscale(100%);
 }
 
 .gallery-item:hover img {
     transform: scale(1.05);
+    filter: grayscale(0);
 }
 
 .month-label {
@@ -232,6 +234,7 @@ main {
     max-height: 80vh;
     object-fit: contain;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: grayscale(0);
 }
 
 .close-modal {
@@ -534,7 +537,7 @@ footer {
     }
     
     .logo img {
-        max-height: 50px;
+        max-height: 70px;
     }
     
     nav {
@@ -573,8 +576,15 @@ footer {
     }
     
     .credit-item {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
         text-align: center;
+    }
+    
+    /* Underline names in mobile view */
+    .highlight {
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 0.3em;
     }
     
     .gallery-container {
@@ -974,12 +984,12 @@ footer {
 
 .contact-left p, .contact-right p {
     font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .contact-link {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .contact-link a {
