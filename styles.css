@@ -580,11 +580,10 @@ footer {
         text-align: center;
     }
     
-    /* Underline names in mobile view */
+    /* Bold names in mobile view without underline */
     .highlight {
         font-weight: 600;
-        text-decoration: underline;
-        text-underline-offset: 0.3em;
+        text-decoration: none;
     }
     
     .gallery-container {
