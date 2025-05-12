@@ -91,6 +91,10 @@ nav a:hover::after, nav a.active::after {
     margin-bottom: 0.2rem;
 }
 
+.download-instruction {
+    font-weight: 600;
+}
+
 /* Credits Section */
 .credits {
     display: flex;
